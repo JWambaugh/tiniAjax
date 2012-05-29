@@ -9,11 +9,11 @@ tiniAjax is an extremely small (less than 1 KB) ajax library designed to mimick 
 * type ('POST' or 'GET) - HTTP METHOD to use
 * success - function to be executed upon success. This function should expect a string of response data.
 
-This new version is no longer creates jQuery variables. In order to use as a replacement for jQuery, simply create the *$* and *jQuery* variables yourself and assign them to *Tini*
+Note that this library creates '$' and "jQuery" variables, so is not compatible alongside jQuery. It's designed to replace jQuery in projects that were written to just use jQuery's ajax, and didn't use it for anything else.
 
 Example:
 --------
-	var $ = Tini;
+
 	$.ajax({
 		url:"http://www.example.com/test"
 		,type:'POST'
