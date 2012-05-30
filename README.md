@@ -9,7 +9,34 @@ tiniAjax is an extremely small (less than 1 KB) ajax library designed to mimick 
 * type ('POST' or 'GET) - HTTP METHOD to use
 * success - function to be executed upon success. This function should expect a string of response data.
 
+Release Notes
+-------------
+
+*1.2*
+Now performs deep parameterization of *data*, just like jQuery. For example:
+	Tini.ajax({
+		url:'example.com'
+		,data:{
+			name:{
+				first: 'Jordan'
+				,last: 'Wambaugh'
+			}
+			,age: 29
+			,hobbies:["Programming","Guitar","Motorcycles"]
+		}
+	})
+This would get passed to the server as:
+	"name%5Bfirst%5D=Jordan&name%5Blast%5D=Wambaugh&age=29&hobbies%5B0%5D=Programming&hobbies%5B1%5D=Guitar&hobbies%5B2%5D=Motorcycles&"
+And unescaped:
+	name[first]=Jordan&name[last]=Wambaugh&age=29&hobbies[0]=Programming&hobbies[1]=Guitar&hobbies[2]=Motorcycles&
+
+
+*1.1*
 This new version is no longer creates jQuery variables. In order to use as a replacement for jQuery, simply create the *$* and *jQuery* variables yourself and assign them to *Tini*
+
+*1.0*
+Initial release
+
 
 Example:
 --------
