@@ -3,7 +3,7 @@ tiniAjax
 
 *The tini tiny jQuery Ajax replacement*
 
-tiniAjax is an extremely small (less than 1 KB) ajax library designed to mimick jQuery's $.ajax, without the need of the rest of ajax. It is very simple, and only supports the following subset of config params:
+tiniAjax is an extremely small (less than 1 KB) ajax library designed to mimick jQuery's $.ajax, without the need of the rest of jQuery. It is very simple, and only supports the following subset of config params:
 * url - The URL to send to
 * data	- object containing parameters to send
 * type ('POST' or 'GET) - HTTP METHOD to use
