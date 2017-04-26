@@ -41,10 +41,10 @@ And unescaped:
 	name[first]=Jordan&name[last]=Wambaugh&age=29&hobbies[0]=Programming&hobbies[1]=Guitar&hobbies[2]=Motorcycles&
 
 
-###1.1
+### 1.1
 This new version is no longer creates jQuery variables. In order to use as a replacement for jQuery, simply create the *$* and *jQuery* variables yourself and assign them to *Tini*
 
-###1.0
+### 1.0
 Initial release
 
 
