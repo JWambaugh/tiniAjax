@@ -13,11 +13,11 @@ Release Notes
 -------------
 
 
-###1.3
+### 1.3
 * Now 'type' parameter is case insensitive
 * Removed console.log debugging call that should never have been committed
 
-###1.2
+### 1.2
 Now performs deep parameterization of *data*, just like jQuery. For example:
 
 	Tini.ajax({
